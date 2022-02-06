@@ -16,6 +16,7 @@
 		CB51808B27AFE9D000C5BF70 /* MyReadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51808A27AFE9D000C5BF70 /* MyReadsTests.swift */; };
 		CB51809527AFE9D000C5BF70 /* MyReadsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51809427AFE9D000C5BF70 /* MyReadsUITests.swift */; };
 		CB51809727AFE9D000C5BF70 /* MyReadsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51809627AFE9D000C5BF70 /* MyReadsUITestsLaunchTests.swift */; };
+		CBE3566027B02A4800612DB0 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = CBE3565F27B02A4800612DB0 /* Network */; };
 		D145F4C01E5F2F0B89466759 /* Pods_MyReads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F15C191E4C9CFC5D5AAD910 /* Pods_MyReads.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CB51809027AFE9D000C5BF70 /* MyReadsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyReadsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB51809427AFE9D000C5BF70 /* MyReadsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadsUITests.swift; sourceTree = "<group>"; };
 		CB51809627AFE9D000C5BF70 /* MyReadsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBE3565E27B02A1E00612DB0 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Network; path = MyReadsFeatures/Network; sourceTree = "<group>"; };
 		D19B53A280D18F1DC6CBCC31 /* Pods-MyReadsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyReadsTests.release.xcconfig"; path = "Target Support Files/Pods-MyReadsTests/Pods-MyReadsTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECD09772BADAD826C38CA617 /* Pods-MyReads-MyReadsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyReads-MyReadsUITests.release.xcconfig"; path = "Target Support Files/Pods-MyReads-MyReadsUITests/Pods-MyReads-MyReadsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D145F4C01E5F2F0B89466759 /* Pods_MyReads.framework in Frameworks */,
+				CBE3566027B02A4800612DB0 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		CB51806D27AFE9C200C5BF70 = {
 			isa = PBXGroup;
 			children = (
+				CBE3565D27B02A1E00612DB0 /* Packages */,
 				CB51807827AFE9C200C5BF70 /* MyReads */,
 				CB51808927AFE9D000C5BF70 /* MyReadsTests */,
 				CB51809327AFE9D000C5BF70 /* MyReadsUITests */,
@@ -154,6 +158,14 @@
 			path = MyReadsUITests;
 			sourceTree = "<group>";
 		};
+		CBE3565D27B02A1E00612DB0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3565E27B02A1E00612DB0 /* Network */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		DAB2215564C1F5617CE90AB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +176,6 @@
 				C7AAC861F4C6D2AE29447CEA /* Pods-MyReadsTests.debug.xcconfig */,
 				D19B53A280D18F1DC6CBCC31 /* Pods-MyReadsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -185,6 +196,9 @@
 			dependencies = (
 			);
 			name = MyReads;
+			packageProductDependencies = (
+				CBE3565F27B02A4800612DB0 /* Network */,
+			);
 			productName = MyReads;
 			productReference = CB51807627AFE9C200C5BF70 /* MyReads.app */;
 			productType = "com.apple.product-type.application";
@@ -724,6 +738,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBE3565F27B02A4800612DB0 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB51806E27AFE9C200C5BF70 /* Project object */;
 }
