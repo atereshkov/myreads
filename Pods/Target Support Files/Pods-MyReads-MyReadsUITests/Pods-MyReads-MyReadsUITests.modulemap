@@ -1,0 +1,6 @@
+framework module Pods_MyReads_MyReadsUITests {
+  umbrella header "Pods-MyReads-MyReadsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
