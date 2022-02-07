@@ -53,6 +53,7 @@
 		AC1773189247EFCC251CA726 /* Pods_MyReadsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyReadsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AAC861F4C6D2AE29447CEA /* Pods-MyReadsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyReadsTests.debug.xcconfig"; path = "Target Support Files/Pods-MyReadsTests/Pods-MyReadsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB04406427B0556800357030 /* WelcomeFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WelcomeFeature; path = MyReadsFeatures/WelcomeFeature; sourceTree = "<group>"; };
+		CB39811127B1ABBF00F17C87 /* MyReadsComponentsKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyReadsComponentsKit; path = MyReadsPackages/MyReadsComponentsKit; sourceTree = "<group>"; };
 		CB51807627AFE9C200C5BF70 /* MyReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB51807927AFE9C200C5BF70 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB51807B27AFE9C200C5BF70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 				CB04406427B0556800357030 /* WelcomeFeature */,
 				CBDC83A427B0585200EB7D45 /* TabBarFeature */,
 				CBFA6A9027B05EE700B4DE48 /* LoginFeature */,
+				CB39811127B1ABBF00F17C87 /* MyReadsComponentsKit */,
 			);
 			name = Packages;
 			sourceTree = "<group>";

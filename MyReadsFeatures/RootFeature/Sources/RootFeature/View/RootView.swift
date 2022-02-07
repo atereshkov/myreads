@@ -14,7 +14,7 @@ public struct RootView<Welcome: View, TabBar: View>: View {
     }
 
     public var body: some View {
-        if false {
+        if true {
             AnyView(welcomeViewProvider())
         } else {
             AnyView(tabBarViewProvider())

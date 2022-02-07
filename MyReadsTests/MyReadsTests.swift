@@ -1,10 +1,3 @@
-//
-//  MyReadsTests.swift
-//  MyReadsTests
-//
-//  Created by nb-058-41b on 2/6/22.
-//
-
 import XCTest
 @testable import MyReads
 

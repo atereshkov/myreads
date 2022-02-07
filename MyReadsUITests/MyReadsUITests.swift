@@ -1,10 +1,3 @@
-//
-//  MyReadsUITests.swift
-//  MyReadsUITests
-//
-//  Created by nb-058-41b on 2/6/22.
-//
-
 import XCTest
 
 class MyReadsUITests: XCTestCase {

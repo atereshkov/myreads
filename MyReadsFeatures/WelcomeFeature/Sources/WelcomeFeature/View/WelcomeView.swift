@@ -1,5 +1,7 @@
 import SwiftUI
 
+import MyReadsComponentsKit
+
 public struct WelcomeView<Login: View>: View {
 
     private var loginViewProvider: () -> Login
@@ -48,8 +50,7 @@ public struct WelcomeView<Login: View>: View {
                         .navigationBarHidden(true)
         ) {
             Text("Start")
-//        }.buttonStyle(PrimaryButton()) // TODO MyReadsViewKit
-        }
+        }.buttonStyle(PrimaryButton())
     }
 
 }
