@@ -1,9 +1,11 @@
 import SwiftUI
 
-public struct LoginView: View {
+public struct LoginView<Registration: View>: View {
 
-    public init() {
+    private var registrationViewProvider: () -> Registration
 
+    public init(registrationViewProvider: @escaping  () -> Registration) {
+        self.registrationViewProvider = registrationViewProvider
     }
 
     public var body: some View {

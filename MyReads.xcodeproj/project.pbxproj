@@ -118,6 +118,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB39811627B1AEB100F17C87 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3565E27B02A1E00612DB0 /* Network */,
+				CBFA6A9027B05EE700B4DE48 /* LoginFeature */,
+				CBDC83A427B0585200EB7D45 /* TabBarFeature */,
+				CB04406427B0556800357030 /* WelcomeFeature */,
+				CBD0FF1327B04EA000940A24 /* RootFeature */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
 		CB51806D27AFE9C200C5BF70 = {
 			isa = PBXGroup;
 			children = (
@@ -183,11 +195,7 @@
 		CBE3565D27B02A1E00612DB0 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				CBE3565E27B02A1E00612DB0 /* Network */,
-				CBD0FF1327B04EA000940A24 /* RootFeature */,
-				CB04406427B0556800357030 /* WelcomeFeature */,
-				CBDC83A427B0585200EB7D45 /* TabBarFeature */,
-				CBFA6A9027B05EE700B4DE48 /* LoginFeature */,
+				CB39811627B1AEB100F17C87 /* Features */,
 				CB39811127B1ABBF00F17C87 /* MyReadsComponentsKit */,
 			);
 			name = Packages;

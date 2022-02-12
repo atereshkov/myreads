@@ -21,7 +21,13 @@ struct MyReadsApp: App {
 
     var welcomeView: some View {
         WelcomeView(
-            loginViewProvider: { LoginView() }
+            loginViewProvider: { loginView }
+        )
+    }
+
+    var loginView: some View {
+        LoginView(
+            registrationViewProvider: { AnyView(Text("Registration").padding()) }
         )
     }
 

@@ -1,5 +1,4 @@
 import SwiftUI
-import Combine
 
 struct AppState: Equatable {
     var auth = AuthState()
