@@ -4,6 +4,8 @@ import RootFeature
 import TabBarFeature
 import WelcomeFeature
 import LoginFeature
+import MyBooksFeature
+import BookDetailsFeature
 
 @main
 struct MyReadsApp: App {
@@ -40,24 +42,27 @@ struct MyReadsApp: App {
 
     var journalTabProvider: TabViewProvider {
         return .init(
-            systemImageName: "book.circle.fill",
-            tabName: "Books"
+            systemImageName: "house.fill",
+            tabName: "Home"
         ) {
             return AnyView(Text("First Tab"))
-//            return BooksListView(
-//                bookViewProvider: { return BookView() },
-//                anotherProvider: { return AnotherView() }
-//            )
         }
     }
 
     var profileTabProvider: TabViewProvider {
         return .init(
-            systemImageName: "person.circle.fill",
-            tabName: "More"
+            systemImageName: "book.fill",
+            tabName: "My Books"
         ) {
-            return AnyView(Text("Second Tab"))
+            return AnyView(MyBooksListView(
+                viewModel: MyBooksViewModel(),
+                bookDetailViewProvider: { id in bookDetail(id: id) }
+            ))
         }
+    }
+
+    func bookDetail(id: String) -> some View {
+        BookDetailsView(id: id)
     }
 
 }

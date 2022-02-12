@@ -6,7 +6,7 @@ public struct WelcomeView<Login: View>: View {
 
     private var loginViewProvider: () -> Login
 
-    public init(loginViewProvider: @escaping  () -> Login) {
+    public init(loginViewProvider: @escaping () -> Login) {
         self.loginViewProvider = loginViewProvider
     }
 

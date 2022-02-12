@@ -4,7 +4,7 @@ public struct LoginView<Registration: View>: View {
 
     private var registrationViewProvider: () -> Registration
 
-    public init(registrationViewProvider: @escaping  () -> Registration) {
+    public init(registrationViewProvider: @escaping () -> Registration) {
         self.registrationViewProvider = registrationViewProvider
     }
 

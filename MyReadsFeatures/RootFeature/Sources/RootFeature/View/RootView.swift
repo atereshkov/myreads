@@ -6,15 +6,15 @@ public struct RootView<Welcome: View, TabBar: View>: View {
     private var tabBarViewProvider: () -> TabBar
 
     public init(
-        welcomeViewProvider: @escaping  () -> Welcome,
-        tabBarViewProvider: @escaping  () -> TabBar
+        welcomeViewProvider: @escaping () -> Welcome,
+        tabBarViewProvider: @escaping () -> TabBar
     ) {
         self.welcomeViewProvider = welcomeViewProvider
         self.tabBarViewProvider = tabBarViewProvider
     }
 
     public var body: some View {
-        if true {
+        if false {
             AnyView(welcomeViewProvider())
         } else {
             AnyView(tabBarViewProvider())
