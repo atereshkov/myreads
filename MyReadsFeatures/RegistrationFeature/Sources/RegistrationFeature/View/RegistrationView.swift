@@ -2,17 +2,12 @@ import SwiftUI
 
 import MyReadsComponentsKit
 
-public struct LoginView<Registration: View>: View {
+public struct RegistrationView: View {
 
-    @ObservedObject var viewModel: LoginViewModel
+    @ObservedObject var viewModel: RegistrationViewModel
 
-    private var registrationViewProvider: () -> Registration
-
-    public init(viewModel: LoginViewModel,
-        registrationViewProvider: @escaping () -> Registration
-    ) {
+    public init(viewModel: RegistrationViewModel) {
         self.viewModel = viewModel
-        self.registrationViewProvider = registrationViewProvider
     }
 
     public var body: some View {
@@ -63,16 +58,24 @@ public struct LoginView<Registration: View>: View {
             passwordTextField
                 .padding([.leading, .trailing], 21)
                 .padding([.top], 18)
-            signInButton
+            confirmPasswordTextField
                 .padding([.leading, .trailing], 21)
                 .padding([.top], 18)
-            dontHaveAccountLabel.padding()
+            signUpButton
+                .padding([.leading, .trailing], 21)
+                .padding([.top], 18)
+            dontWantToSignUpButton
+                .padding([.leading, .trailing], 21)
+                .padding([.top], 9)
+            alreadyHaveAccountLabel
+                .padding()
+                .padding([.top], 18)
         }
     }
 
     var loadingIndicator: some View {
         GeometryReader { metrics in
-            CircleLoadingView(color: Color.white)
+            CircleLoadingView(color: .white)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .frame(height: metrics.size.height * 0.2)
         }
@@ -92,8 +95,8 @@ public struct LoginView<Registration: View>: View {
 
     var passwordTextField: some View {
         SecureField("", text: Binding(
-                        get: { viewModel.password ?? "" },
-                        set: { viewModel.password = $0 })
+                    get: { viewModel.password ?? "" },
+                    set: { viewModel.password = $0 })
         )
         .textFieldStyle(PrimaryTextField())
         .disableAutocorrection(true)
@@ -101,22 +104,43 @@ public struct LoginView<Registration: View>: View {
         .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
 
-    var signInButton: some View {
-        Button("Sign In") {
-            viewModel.signInAction()
+    var confirmPasswordTextField: some View {
+        SecureField("", text: Binding(
+                    get: { viewModel.confirmPassword ?? "" },
+                    set: { viewModel.confirmPassword = $0 })
+        )
+        .textFieldStyle(PrimaryTextField())
+        .disableAutocorrection(true)
+        .autocapitalization(.none)
+        .placeHolder(Text("Confirm password"), show: viewModel.confirmPassword?.isEmpty ?? true)
+    }
+
+    var signUpButton: some View {
+        Button("Sign Up") {
+            viewModel.signUpAction()
         }.buttonStyle(PrimaryButton())
     }
 
-    var dontHaveAccountLabel: some View {
-        NavigationLink(destination:
-                        self.registrationViewProvider()
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-        ) {
-            Text("I don't have an account")
-                .foregroundColor(Color.white)
-                .underline()
+    var dontWantToSignUpButton: some View {
+        Button("I don't want to sign up") {
+
         }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .foregroundColor(.white)
+        .font(.system(size: 16, weight: .semibold))
+        .background(Color.clear)
+        .shadow(color: Color.black.opacity(0.05), radius: 7, x: 0, y: 6)
+        .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.white, lineWidth: 1))
+    }
+
+    var alreadyHaveAccountLabel: some View {
+        Text("I already have an account")
+            .foregroundColor(Color.white)
+            .underline()
+            .onTapGesture {
+                viewModel.haveAccountAction()
+            }
     }
 
     var backgroundColor: some View {

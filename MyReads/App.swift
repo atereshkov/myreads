@@ -6,6 +6,7 @@ import WelcomeFeature
 import LoginFeature
 import MyBooksFeature
 import BookDetailsFeature
+import RegistrationFeature
 
 @main
 struct MyReadsApp: App {
@@ -29,8 +30,13 @@ struct MyReadsApp: App {
 
     var loginView: some View {
         LoginView(
-            registrationViewProvider: { AnyView(Text("Registration").padding()) }
+            viewModel: LoginViewModel(),
+            registrationViewProvider: { registrationView }
         )
+    }
+
+    var registrationView: some View {
+        RegistrationView(viewModel: RegistrationViewModel())
     }
 
     var tabBarView: some View {

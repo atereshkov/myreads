@@ -11,6 +11,7 @@
 		5BA4D459FF2111DF06582611 /* Pods_MyReadsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1773189247EFCC251CA726 /* Pods_MyReadsTests.framework */; };
 		CB39811927B84FE000F17C87 /* MyBooksFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CB39811827B84FE000F17C87 /* MyBooksFeature */; };
 		CB39811C27B8579900F17C87 /* BookDetailsFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CB39811B27B8579900F17C87 /* BookDetailsFeature */; };
+		CB39811F27B969D200F17C87 /* RegistrationFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CB39811E27B969D200F17C87 /* RegistrationFeature */; };
 		CB51807A27AFE9C200C5BF70 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51807927AFE9C200C5BF70 /* App.swift */; };
 		CB51807C27AFE9C200C5BF70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51807B27AFE9C200C5BF70 /* ContentView.swift */; };
 		CB51807E27AFE9D000C5BF70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB51807D27AFE9D000C5BF70 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		CB39811127B1ABBF00F17C87 /* MyReadsComponentsKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyReadsComponentsKit; path = MyReadsPackages/MyReadsComponentsKit; sourceTree = "<group>"; };
 		CB39811727B84F2F00F17C87 /* MyBooksFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyBooksFeature; path = MyReadsFeatures/MyBooksFeature; sourceTree = "<group>"; };
 		CB39811A27B8579200F17C87 /* BookDetailsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BookDetailsFeature; path = MyReadsFeatures/BookDetailsFeature; sourceTree = "<group>"; };
+		CB39811D27B969AB00F17C87 /* RegistrationFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RegistrationFeature; path = MyReadsFeatures/RegistrationFeature; sourceTree = "<group>"; };
 		CB51807627AFE9C200C5BF70 /* MyReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB51807927AFE9C200C5BF70 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB51807B27AFE9C200C5BF70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				CBDC83A627B05C4300EB7D45 /* TabBarFeature in Frameworks */,
 				CBFA6A9227B05EF400B4DE48 /* LoginFeature in Frameworks */,
 				CBE3566027B02A4800612DB0 /* Network in Frameworks */,
+				CB39811F27B969D200F17C87 /* RegistrationFeature in Frameworks */,
 				CBD0FF1527B04EE000940A24 /* RootFeature in Frameworks */,
 				CB39811C27B8579900F17C87 /* BookDetailsFeature in Frameworks */,
 			);
@@ -130,6 +133,7 @@
 				CBE3565E27B02A1E00612DB0 /* Network */,
 				CBD0FF1327B04EA000940A24 /* RootFeature */,
 				CBFA6A9027B05EE700B4DE48 /* LoginFeature */,
+				CB39811D27B969AB00F17C87 /* RegistrationFeature */,
 				CBDC83A427B0585200EB7D45 /* TabBarFeature */,
 				CB04406427B0556800357030 /* WelcomeFeature */,
 				CB39811727B84F2F00F17C87 /* MyBooksFeature */,
@@ -247,6 +251,7 @@
 				CBFA6A9127B05EF400B4DE48 /* LoginFeature */,
 				CB39811827B84FE000F17C87 /* MyBooksFeature */,
 				CB39811B27B8579900F17C87 /* BookDetailsFeature */,
+				CB39811E27B969D200F17C87 /* RegistrationFeature */,
 			);
 			productName = MyReads;
 			productReference = CB51807627AFE9C200C5BF70 /* MyReads.app */;
@@ -799,6 +804,10 @@
 		CB39811B27B8579900F17C87 /* BookDetailsFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BookDetailsFeature;
+		};
+		CB39811E27B969D200F17C87 /* RegistrationFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RegistrationFeature;
 		};
 		CBD0FF1427B04EE000940A24 /* RootFeature */ = {
 			isa = XCSwiftPackageProductDependency;

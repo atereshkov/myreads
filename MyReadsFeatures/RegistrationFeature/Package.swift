@@ -4,22 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "LoginFeature",
+    name: "RegistrationFeature",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "LoginFeature",
-            targets: ["LoginFeature"]),
+            name: "RegistrationFeature",
+            targets: ["RegistrationFeature"]),
     ],
     dependencies: [
         .package(path: "../MyReadsComponentsKit")
     ],
     targets: [
         .target(
-            name: "LoginFeature",
+            name: "RegistrationFeature",
             dependencies: ["MyReadsComponentsKit"]),
         .testTarget(
-            name: "LoginFeatureTests",
-            dependencies: ["LoginFeature"]),
+            name: "RegistrationFeatureTests",
+            dependencies: ["RegistrationFeature"]),
     ]
 )
