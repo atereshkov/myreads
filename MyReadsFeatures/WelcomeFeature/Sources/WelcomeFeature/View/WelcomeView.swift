@@ -4,9 +4,15 @@ import MyReadsComponentsKit
 
 public struct WelcomeView<Login: View>: View {
 
+    @ObservedObject var viewModel: WelcomeViewModel
+
     private var loginViewProvider: () -> Login
 
-    public init(loginViewProvider: @escaping () -> Login) {
+    public init(
+        viewModel: WelcomeViewModel,
+        loginViewProvider: @escaping () -> Login
+    ) {
+        self.viewModel = viewModel
         self.loginViewProvider = loginViewProvider
     }
 
@@ -51,6 +57,10 @@ public struct WelcomeView<Login: View>: View {
         ) {
             Text("Start")
         }.buttonStyle(PrimaryButton())
+
+//        Button("Sign In") {
+//            viewModel.signInAction()
+//        }.buttonStyle(PrimaryButton())
     }
 
 }

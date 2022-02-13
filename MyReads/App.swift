@@ -9,7 +9,7 @@ struct MyReadsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AppView()
+            AppView(appState: environment.appState)
         }
     }
 

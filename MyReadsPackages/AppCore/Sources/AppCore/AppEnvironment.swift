@@ -1,11 +1,11 @@
-import Foundation
+import AppState
 
-struct AppEnvironment {
+public struct AppEnvironment {
 //    let session: SessionType
-    let appState: Store<AppState>
+    public let appState: Store<AppState>
 }
 
-extension AppEnvironment {
+public extension AppEnvironment {
 
     static func boot() -> AppEnvironment {
 //        FirebaseApp.configure()

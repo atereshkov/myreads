@@ -8,15 +8,19 @@ import MyBooksFeature
 import BookDetailsFeature
 import TabBarFeature
 
+import AppState
+
 public struct AppView: View {
 
-    public init() {
+    private let appState: Store<AppState>
 
+    public init(appState: Store<AppState>) {
+        self.appState = appState
     }
 
     public var body: some View {
         RootView(
-            viewModel: RootViewModel(),
+            viewModel: RootViewModel(appState: appState),
             welcomeViewProvider: { welcomeView },
             tabBarViewProvider: { tabBarView }
         )
@@ -24,13 +28,16 @@ public struct AppView: View {
 
     var welcomeView: some View {
         WelcomeView(
+            viewModel: WelcomeViewModel(appState: appState),
             loginViewProvider: { loginView }
         )
     }
 
     var loginView: some View {
         LoginView(
-            viewModel: LoginViewModel(),
+            viewModel: LoginViewModel(onAuth: {
+                appState[\.auth.isAuthorized] = true
+            }),
             registrationViewProvider: { registrationView }
         )
     }

@@ -17,9 +17,6 @@
 		CB51808B27AFE9D000C5BF70 /* MyReadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51808A27AFE9D000C5BF70 /* MyReadsTests.swift */; };
 		CB51809527AFE9D000C5BF70 /* MyReadsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51809427AFE9D000C5BF70 /* MyReadsUITests.swift */; };
 		CB51809727AFE9D000C5BF70 /* MyReadsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51809627AFE9D000C5BF70 /* MyReadsUITestsLaunchTests.swift */; };
-		CBD0FF0E27B03EED00940A24 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0FF0D27B03EED00940A24 /* AppEnvironment.swift */; };
-		CBD0FF1027B043B000940A24 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0FF0F27B043B000940A24 /* Store.swift */; };
-		CBD0FF1227B043D000940A24 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0FF1127B043D000940A24 /* AppState.swift */; };
 		D145F4C01E5F2F0B89466759 /* Pods_MyReads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F15C191E4C9CFC5D5AAD910 /* Pods_MyReads.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +51,7 @@
 		CB39811A27B8579200F17C87 /* BookDetailsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BookDetailsFeature; path = MyReadsFeatures/BookDetailsFeature; sourceTree = "<group>"; };
 		CB39811D27B969AB00F17C87 /* RegistrationFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RegistrationFeature; path = MyReadsFeatures/RegistrationFeature; sourceTree = "<group>"; };
 		CB39812327B9A41800F17C87 /* AppCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppCore; path = MyReadsPackages/AppCore; sourceTree = "<group>"; };
+		CB39812427B9A66300F17C87 /* AppState */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppState; path = MyReadsPackages/AppState; sourceTree = "<group>"; };
 		CB51807627AFE9C200C5BF70 /* MyReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB51807927AFE9C200C5BF70 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB51807B27AFE9C200C5BF70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,9 +62,6 @@
 		CB51809027AFE9D000C5BF70 /* MyReadsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyReadsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB51809427AFE9D000C5BF70 /* MyReadsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadsUITests.swift; sourceTree = "<group>"; };
 		CB51809627AFE9D000C5BF70 /* MyReadsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CBD0FF0D27B03EED00940A24 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
-		CBD0FF0F27B043B000940A24 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		CBD0FF1127B043D000940A24 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CBD0FF1327B04EA000940A24 /* RootFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RootFeature; path = MyReadsFeatures/RootFeature; sourceTree = "<group>"; };
 		CBDC83A427B0585200EB7D45 /* TabBarFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TabBarFeature; path = MyReadsFeatures/TabBarFeature; sourceTree = "<group>"; };
 		CBE3565E27B02A1E00612DB0 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Network; path = MyReadsFeatures/Network; sourceTree = "<group>"; };
@@ -156,9 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				CB51807927AFE9C200C5BF70 /* App.swift */,
-				CBD0FF0D27B03EED00940A24 /* AppEnvironment.swift */,
-				CBD0FF1127B043D000940A24 /* AppState.swift */,
-				CBD0FF0F27B043B000940A24 /* Store.swift */,
 				CB51807B27AFE9C200C5BF70 /* ContentView.swift */,
 				CB51807D27AFE9D000C5BF70 /* Assets.xcassets */,
 				CB51807F27AFE9D000C5BF70 /* Preview Content */,
@@ -197,6 +189,7 @@
 				CB39811627B1AEB100F17C87 /* Features */,
 				CB39811127B1ABBF00F17C87 /* MyReadsComponentsKit */,
 				CB39812327B9A41800F17C87 /* AppCore */,
+				CB39812427B9A66300F17C87 /* AppState */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -421,9 +414,6 @@
 			files = (
 				CB51807C27AFE9C200C5BF70 /* ContentView.swift in Sources */,
 				CB51807A27AFE9C200C5BF70 /* App.swift in Sources */,
-				CBD0FF0E27B03EED00940A24 /* AppEnvironment.swift in Sources */,
-				CBD0FF1227B043D000940A24 /* AppState.swift in Sources */,
-				CBD0FF1027B043B000940A24 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

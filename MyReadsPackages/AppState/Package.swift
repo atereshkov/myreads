@@ -4,22 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "RootFeature",
+    name: "AppState",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "RootFeature",
-            targets: ["RootFeature"]),
+            name: "AppState",
+            targets: ["AppState"]),
     ],
     dependencies: [
-        .package(path: "../AppState"),
+
     ],
     targets: [
         .target(
-            name: "RootFeature",
-            dependencies: ["AppState"]),
+            name: "AppState",
+            dependencies: []),
         .testTarget(
-            name: "RootFeatureTests",
-            dependencies: ["RootFeature"]),
+            name: "AppStateTests",
+            dependencies: ["AppState"]),
     ]
 )

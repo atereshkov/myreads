@@ -12,6 +12,7 @@ let package = Package(
             targets: ["AppCore"]),
     ],
     dependencies: [
+        .package(path: "../AppState"),
         .package(path: "../RootFeature"),
         .package(path: "../LoginFeature"),
         .package(path: "../RegistrationFeature"),
@@ -24,6 +25,7 @@ let package = Package(
         .target(
             name: "AppCore",
             dependencies: [
+                "AppState",
                 "RootFeature",
                 "LoginFeature",
                 "RegistrationFeature",

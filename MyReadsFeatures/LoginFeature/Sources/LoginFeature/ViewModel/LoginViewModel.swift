@@ -5,7 +5,10 @@ public class LoginViewModel: ObservableObject {
 
     @Published var routingState: LoginRouting
 
-    public init() {
+    private let onAuth: () -> Void
+
+    public init(onAuth: @escaping () -> Void) {
+        self.onAuth = onAuth
         self.routingState = LoginRouting()
     }
 
@@ -41,6 +44,8 @@ extension LoginViewModel {
 //                }
 //            }, receiveValue: { _ in })
 //            .store(in: cancelBag)
+
+        onAuth()
     }
 
 }

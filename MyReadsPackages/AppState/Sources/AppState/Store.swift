@@ -1,9 +1,8 @@
-import SwiftUI
 import Combine
 
-typealias Store<State> = CurrentValueSubject<State, Never>
+public typealias Store<State> = CurrentValueSubject<State, Never>
 
-extension Store {
+public extension Store {
 
     subscript<T>(keyPath: WritableKeyPath<Output, T>) -> T where T: Equatable {
         get { value[keyPath: keyPath] }
