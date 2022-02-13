@@ -16,6 +16,7 @@ struct MyReadsApp: App {
     var body: some Scene {
         WindowGroup {
             RootView(
+                viewModel: RootViewModel(),
                 welcomeViewProvider: { welcomeView },
                 tabBarViewProvider: { tabBarView }
             )
@@ -41,12 +42,12 @@ struct MyReadsApp: App {
 
     var tabBarView: some View {
         TabBarView(providers: [
-            journalTabProvider,
-            profileTabProvider
+            homeTabProvider,
+            myBooksTabProvider
         ])
     }
 
-    var journalTabProvider: TabViewProvider {
+    var homeTabProvider: TabViewProvider {
         return .init(
             systemImageName: "house.fill",
             tabName: "Home"
@@ -55,7 +56,7 @@ struct MyReadsApp: App {
         }
     }
 
-    var profileTabProvider: TabViewProvider {
+    var myBooksTabProvider: TabViewProvider {
         return .init(
             systemImageName: "book.fill",
             tabName: "My Books"

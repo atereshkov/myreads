@@ -30,7 +30,7 @@ extension MyBooksListView {
                 books
             }
             .padding([.leading, .trailing], 18)
-            .navigationBarTitle(Text("Home"), displayMode: .inline)
+            .navigationBarTitle(Text("My Books"), displayMode: .inline)
             .navigationBarItems(trailing: accountButton)
         }
     }
