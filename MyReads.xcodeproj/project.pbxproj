@@ -53,7 +53,7 @@
 		CB39811727B84F2F00F17C87 /* MyBooksFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyBooksFeature; path = MyReadsFeatures/MyBooksFeature; sourceTree = "<group>"; };
 		CB39811A27B8579200F17C87 /* BookDetailsFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BookDetailsFeature; path = MyReadsFeatures/BookDetailsFeature; sourceTree = "<group>"; };
 		CB39811D27B969AB00F17C87 /* RegistrationFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RegistrationFeature; path = MyReadsFeatures/RegistrationFeature; sourceTree = "<group>"; };
-		CB39812027B9A2BF00F17C87 /* AppCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppCore; path = MyReadsFeatures/AppCore; sourceTree = "<group>"; };
+		CB39812327B9A41800F17C87 /* AppCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppCore; path = MyReadsPackages/AppCore; sourceTree = "<group>"; };
 		CB51807627AFE9C200C5BF70 /* MyReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB51807927AFE9C200C5BF70 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB51807B27AFE9C200C5BF70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 			children = (
 				CB39811627B1AEB100F17C87 /* Features */,
 				CB39811127B1ABBF00F17C87 /* MyReadsComponentsKit */,
-				CB39812027B9A2BF00F17C87 /* AppCore */,
+				CB39812327B9A41800F17C87 /* AppCore */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
