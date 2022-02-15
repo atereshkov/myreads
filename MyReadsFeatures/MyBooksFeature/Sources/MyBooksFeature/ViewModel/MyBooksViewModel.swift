@@ -10,12 +10,9 @@ public class MyBooksViewModel: ObservableObject {
         BookViewItem(id: "3", name: "Book 3")
     ]
 
-    @Published var routingState: MyBooksRouting
+    @Published var routingState = MyBooksRouting()
 
     public init() {
-        // Injecting via init or DI Container?
-        self.routingState = MyBooksRouting()
-
 //        cancelBag.collect {
 //            $routingState
 //                .sink { session.appState[\.routing.home] = $0 }

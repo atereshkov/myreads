@@ -35,9 +35,12 @@ public struct AppView: View {
 
     var loginView: some View {
         LoginView(
-            viewModel: LoginViewModel(onAuth: {
-                appState[\.auth.isAuthorized] = true
-            }),
+            viewModel: LoginViewModel(
+                dataService: LoginDataService(),
+                onAuth: {
+                    appState[\.auth.isAuthorized] = true
+                }
+            ),
             registrationViewProvider: { registrationView }
         )
     }
@@ -54,7 +57,7 @@ public struct AppView: View {
     }
 
     var homeTabProvider: TabViewProvider {
-        return .init(
+        return TabViewProvider(
             systemImageName: "house.fill",
             tabName: "Home"
         ) {
@@ -63,7 +66,7 @@ public struct AppView: View {
     }
 
     var myBooksTabProvider: TabViewProvider {
-        return .init(
+        return TabViewProvider(
             systemImageName: "book.fill",
             tabName: "My Books"
         ) {

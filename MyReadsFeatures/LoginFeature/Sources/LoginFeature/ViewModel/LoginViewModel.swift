@@ -3,13 +3,15 @@ import Combine
 
 public class LoginViewModel: ObservableObject {
 
-    @Published var routingState: LoginRouting
-
+    private let dataService: LoginDataServiceType
     private let onAuth: () -> Void
 
-    public init(onAuth: @escaping () -> Void) {
+    public init(
+        dataService: LoginDataServiceType,
+        onAuth: @escaping () -> Void
+    ) {
+        self.dataService = dataService
         self.onAuth = onAuth
-        self.routingState = LoginRouting()
     }
 
     // MARK: - Input
@@ -20,6 +22,7 @@ public class LoginViewModel: ObservableObject {
     // MARK: - Output
 
     @Published var state: LoginViewState = .start
+    @Published var routingState = LoginRouting()
 
 }
 

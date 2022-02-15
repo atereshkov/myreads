@@ -3,10 +3,8 @@ import SwiftUI
 
 public class RegistrationViewModel: ObservableObject {
 
-    @Published var routingState: RegistrationRouting
-
     public init() {
-        self.routingState = RegistrationRouting()
+
     }
 
     // MARK: - Input
@@ -18,6 +16,7 @@ public class RegistrationViewModel: ObservableObject {
     // MARK: - Output
 
     @Published var state: RegistrationViewState = .start
+    @Published var routingState = RegistrationRouting()
 
 }
 
