@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "977390A3-2F2A-454B-8698-CE3000757929",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MyReads.xcodeproj",
+        "identifier" : "CB51808527AFE9D000C5BF70",
+        "name" : "MyReadsTests"
+      }
+    }
+  ],
+  "version" : 1
+}

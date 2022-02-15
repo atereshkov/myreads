@@ -12,12 +12,13 @@ let package = Package(
             targets: ["WelcomeFeature"]),
     ],
     dependencies: [
-        .package(path: "../MyReadsComponentsKit")
+        .package(path: "../MyReadsComponentsKit"),
+        .package(path: "../AppState")
     ],
     targets: [
         .target(
             name: "WelcomeFeature",
-            dependencies: ["MyReadsComponentsKit"]),
+            dependencies: ["MyReadsComponentsKit", "AppState"]),
         .testTarget(
             name: "WelcomeFeatureTests",
             dependencies: ["WelcomeFeature"]),

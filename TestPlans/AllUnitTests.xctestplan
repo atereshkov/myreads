@@ -1,0 +1,101 @@
+{
+  "configurations" : [
+    {
+      "id" : "F2931D03-30BC-40FA-9C39-95EA2CC4E19C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsPackages\/AppCore",
+        "identifier" : "AppCoreTests",
+        "name" : "AppCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsPackages\/AppState",
+        "identifier" : "AppStateTests",
+        "name" : "AppStateTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/BookDetailsFeature",
+        "identifier" : "BookDetailsFeatureTests",
+        "name" : "BookDetailsFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/MyBooksFeature",
+        "identifier" : "MyBooksFeatureTests",
+        "name" : "MyBooksFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsPackages\/MyReadsComponentsKit",
+        "identifier" : "MyReadsComponentsKitTests",
+        "name" : "MyReadsComponentsKitTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/Network",
+        "identifier" : "NetworkTests",
+        "name" : "NetworkTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/RootFeature",
+        "identifier" : "RootFeatureTests",
+        "name" : "RootFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/TabBarFeature",
+        "identifier" : "TabBarFeatureTests",
+        "name" : "TabBarFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/LoginFeature",
+        "identifier" : "LoginFeatureTests",
+        "name" : "LoginFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReads.xcodeproj",
+        "identifier" : "CB51808527AFE9D000C5BF70",
+        "name" : "MyReadsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/RegistrationFeature",
+        "identifier" : "RegistrationFeatureTests",
+        "name" : "RegistrationFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MyReadsFeatures\/WelcomeFeature",
+        "identifier" : "WelcomeFeatureTests",
+        "name" : "WelcomeFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}
