@@ -14,6 +14,13 @@
   "testTargets" : [
     {
       "target" : {
+        "containerPath" : "container:MyReads.xcodeproj",
+        "identifier" : "CB51808527AFE9D000C5BF70",
+        "name" : "MyReadsTests"
+      }
+    },
+    {
+      "target" : {
         "containerPath" : "container:MyReadsPackages\/AppCore",
         "identifier" : "AppCoreTests",
         "name" : "AppCoreTests"
@@ -73,13 +80,6 @@
         "containerPath" : "container:MyReadsFeatures\/LoginFeature",
         "identifier" : "LoginFeatureTests",
         "name" : "LoginFeatureTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:MyReads.xcodeproj",
-        "identifier" : "CB51808527AFE9D000C5BF70",
-        "name" : "MyReadsTests"
       }
     },
     {

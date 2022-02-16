@@ -1,5 +1,3 @@
-import Foundation
-
 enum LoginViewState {
     case start
     case loading
